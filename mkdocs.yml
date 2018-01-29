@@ -1,6 +1,11 @@
+
 repo_name: ilyasotkov/high-level-devops
 repo_url: https://github.com/ilyasotkov/high-level-devops
 edit_uri: ""
+extra_css:
+  - "css/extra.css"
+
+site_name: "High-level DevOps"
 
 pages:
   - Overview: index.md
@@ -8,8 +13,6 @@ pages:
 copyright: 'Copyright &copy; 2018 Ilya Sotkov'
 
 docs_dir: 'docs'
-extra_css:
-  - 'css/extra.css'
 markdown_extensions:
   - codehilite:
       linenums: false
@@ -27,17 +30,4 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
-theme:
-  name: material
-  custom_dir: _docs/theme
-  logo:
-    icon: cloud_upload
-  feature:
-    tabs: true
-  font:
-    text: Roboto
-    code: Roboto Mono
-  palette:
-    primary: green
-    accent: green
-site_name: High-level DevOps
+theme: cinder
