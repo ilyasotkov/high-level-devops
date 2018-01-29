@@ -1,0 +1,14 @@
+version: "2"
+
+services:
+  docs:
+    image: squidfunk/mkdocs-material:latest
+    volumes:
+      - .:/docs
+    ports:
+      - 8000:8000
+    entrypoint: mkdocs
+    command:
+      - serve
+      - --livereload
+      - --dev-addr=0.0.0.0:8000
