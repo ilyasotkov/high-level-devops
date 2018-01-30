@@ -28,6 +28,14 @@
 }
 
 .md-nav__title.md-nav__title--site.md-nav__title--site.md-nav__title--site {
-  padding-top: 1.6rem;
+  padding-top: 0.4rem;
   height: auto;
+}
+
+.md-header-nav__topic {
+  font-size: 2.6rem !important;
+}
+
+.md-nav__title {
+  font-size: 2.4rem !important;
 }
