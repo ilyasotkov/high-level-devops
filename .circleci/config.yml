@@ -7,7 +7,7 @@ jobs:
       - checkout
       - run:
           name: Build and deploy website to GitHub Pages
-          command: mkdocs gh-deploy --message "[ci skip] skipping gh-pages branch"
+          command: mkdocs gh-deploy --message "[ci skip] Deployed with MkDocs"
 workflows:
   version: 2
   deploy:
