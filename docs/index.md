@@ -1,4 +1,4 @@
-# High-level DevOps
+# Business value of DevOps
 
 This article highlights the value of DevOps for businesses, Q&A-style.
 
