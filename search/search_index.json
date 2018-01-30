@@ -1,0 +1,144 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "High-level DevOps\n\n\nThis article highlights the value of DevOps for businesses, Q\nA-style.\n\n\nQuestion: what problems do enterprises face that DevOps can solve?\n\n\n\n\nCommunication problems between developers (\"works on my machine\")\n\n\nInability to quickly go from commit to release\n\n\nProblems with reliability in production (scalability, uptime, response times)\n\n\nLate responses to production release problems\n\n\n\n\nTask: draw a diagram for the whole DevOps process\n\n\n\n\nTask: describe the process of a software release, step-by-step\n\n\n\n\n\n\nIdea\n\n\n\n\n\n\nPlan\n\n\n\n\n\n\nCode, commit, push to feature-branch\n\n\n\n\n\n\nPipeline:\n\n\n\n\nbuild\n\n\ndeploy\n\n\ntest end-to-end\n\n\n\n\n\n\n\n\nWhen happy, merge pull request into master, then run pipeline:\n\n\n\n\nbuild\n\n\ndeploy\n\n\ntest end-to-end\n\n\n\n\n\n\n\n\nMonitor and respond to alerts when necessary.\n\n\n\n\n\n\nQuestion: who's responsibility is each step?\n\n\nSteps 4 and 5 are done via a CI pipeline.\n\n\nOther steps are done by humans, such as marketing people or engineering people.\n\n\nQuestion: what's the point of DevOps?\n\n\nWith DevOps, we get:\n\n\n\n\nIncreased deployment frequency (feature / hotfix releases)\n\n\nReliable releases that never fail in production\n\n\n\n\nBusiness value:\n\n\n\n\nHappy application developers\n\n\nLess time (on payroll) spent on fixing and maintaining things\n\n\nHappy end customers (requested features and fixes get delivered quicker and reliably)\n\n\nNo PR blunders due to security issues\n\n\n\n\nUp next\n\n\nDeveloper experience: from idea to push", 
+            "title": "Business value of DevOps"
+        }, 
+        {
+            "location": "/#high-level-devops", 
+            "text": "This article highlights the value of DevOps for businesses, Q A-style.", 
+            "title": "High-level DevOps"
+        }, 
+        {
+            "location": "/#question-what-problems-do-enterprises-face-that-devops-can-solve", 
+            "text": "Communication problems between developers (\"works on my machine\")  Inability to quickly go from commit to release  Problems with reliability in production (scalability, uptime, response times)  Late responses to production release problems", 
+            "title": "Question: what problems do enterprises face that DevOps can solve?"
+        }, 
+        {
+            "location": "/#task-draw-a-diagram-for-the-whole-devops-process", 
+            "text": "", 
+            "title": "Task: draw a diagram for the whole DevOps process"
+        }, 
+        {
+            "location": "/#task-describe-the-process-of-a-software-release-step-by-step", 
+            "text": "Idea    Plan    Code, commit, push to feature-branch    Pipeline:   build  deploy  test end-to-end     When happy, merge pull request into master, then run pipeline:   build  deploy  test end-to-end     Monitor and respond to alerts when necessary.", 
+            "title": "Task: describe the process of a software release, step-by-step"
+        }, 
+        {
+            "location": "/#question-whos-responsibility-is-each-step", 
+            "text": "Steps 4 and 5 are done via a CI pipeline.  Other steps are done by humans, such as marketing people or engineering people.", 
+            "title": "Question: who's responsibility is each step?"
+        }, 
+        {
+            "location": "/#question-whats-the-point-of-devops", 
+            "text": "With DevOps, we get:   Increased deployment frequency (feature / hotfix releases)  Reliable releases that never fail in production   Business value:   Happy application developers  Less time (on payroll) spent on fixing and maintaining things  Happy end customers (requested features and fixes get delivered quicker and reliably)  No PR blunders due to security issues", 
+            "title": "Question: what's the point of DevOps?"
+        }, 
+        {
+            "location": "/#up-next", 
+            "text": "Developer experience: from idea to push", 
+            "title": "Up next"
+        }, 
+        {
+            "location": "/development/", 
+            "text": "Developer tasks\n\n\nThis article focuses on getting from an idea to pushing out a commit of a pull request:\n\n\n\n\nIdea\n\n\nPlan\n\n\nCode\n\n\nCommit and push to remote\n\n\n\n\nWhat tools are used during software development?\n\n\nGenerating ideas\n\n\n\n\nWhiteboard\n\n\nPaper and pen\n\n\nMind maps and diagrams\n\n\n\n\nWriting a plan\n\n\n\n\nCucumber (feature specifications)\n\n\nGitHub discussions\n\n\nREADMEs for feature proposals\n\n\n\n\nCode\n\n\n\n\nText editor / IDE (Atom, Vim, Sublime, etc.)\n\n\n\n\nCommit and push to remote\n\n\n\n\nGit interface (Git CLI, GitUp, SourceTree)\n\n\n\n\nWhat is the value of learning and using a version control system?\n\n\n\n\nA distributed version control system allows developers to work on any part of the project at the same time\n\n\nAbility to roll back to a previous version of a file or whole project\n\n\nAbility to track changes and who made them\n\n\n\n\nUp next\n\n\nDelivering software continuously", 
+            "title": "Developing software"
+        }, 
+        {
+            "location": "/development/#developer-tasks", 
+            "text": "This article focuses on getting from an idea to pushing out a commit of a pull request:   Idea  Plan  Code  Commit and push to remote", 
+            "title": "Developer tasks"
+        }, 
+        {
+            "location": "/development/#what-tools-are-used-during-software-development", 
+            "text": "", 
+            "title": "What tools are used during software development?"
+        }, 
+        {
+            "location": "/development/#generating-ideas", 
+            "text": "Whiteboard  Paper and pen  Mind maps and diagrams", 
+            "title": "Generating ideas"
+        }, 
+        {
+            "location": "/development/#writing-a-plan", 
+            "text": "Cucumber (feature specifications)  GitHub discussions  READMEs for feature proposals", 
+            "title": "Writing a plan"
+        }, 
+        {
+            "location": "/development/#code", 
+            "text": "Text editor / IDE (Atom, Vim, Sublime, etc.)", 
+            "title": "Code"
+        }, 
+        {
+            "location": "/development/#commit-and-push-to-remote", 
+            "text": "Git interface (Git CLI, GitUp, SourceTree)", 
+            "title": "Commit and push to remote"
+        }, 
+        {
+            "location": "/development/#what-is-the-value-of-learning-and-using-a-version-control-system", 
+            "text": "A distributed version control system allows developers to work on any part of the project at the same time  Ability to roll back to a previous version of a file or whole project  Ability to track changes and who made them", 
+            "title": "What is the value of learning and using a version control system?"
+        }, 
+        {
+            "location": "/development/#up-next", 
+            "text": "Delivering software continuously", 
+            "title": "Up next"
+        }, 
+        {
+            "location": "/delivery/", 
+            "text": "Delivering software continuously\n\n\nThis article highlights the value of delivering software continuously.\n\n\n\n\nBuild container image\n\n\nDeploy container image into a testing cloud environment\n\n\nTest reliability\n\n\nIf tests are passed, deploy into production\n\n\n\n\nBuild container images\n\n\nContainers (Docker containers) allow us to run software predictably on any workstation and in any cloud environment.\n\n\nThe first step upon pushing source code into a remote version control repository is to build the image, or convert source code into executable machine code.\n\n\nDeploy container image into a testing deployment environment\n\n\nOnce the image is built, we deploy our software into a deployment environment that simulates production and test its reliability.\n\n\nTest reliabilty\n\n\nReliability is tested via unit tests (low-level tests) and integration tests (end-to-end, high-level tests).\n\n\nScalability and security should be tested as well.\n\n\nDeploy into production\n\n\nIf the release candidate meets our quality requirements, we are ready to ship it into production.\n\n\nUp next\n\n\nMonitoring and alerting", 
+            "title": "Delivering software"
+        }, 
+        {
+            "location": "/delivery/#delivering-software-continuously", 
+            "text": "This article highlights the value of delivering software continuously.   Build container image  Deploy container image into a testing cloud environment  Test reliability  If tests are passed, deploy into production", 
+            "title": "Delivering software continuously"
+        }, 
+        {
+            "location": "/delivery/#build-container-images", 
+            "text": "Containers (Docker containers) allow us to run software predictably on any workstation and in any cloud environment.  The first step upon pushing source code into a remote version control repository is to build the image, or convert source code into executable machine code.", 
+            "title": "Build container images"
+        }, 
+        {
+            "location": "/delivery/#deploy-container-image-into-a-testing-deployment-environment", 
+            "text": "Once the image is built, we deploy our software into a deployment environment that simulates production and test its reliability.", 
+            "title": "Deploy container image into a testing deployment environment"
+        }, 
+        {
+            "location": "/delivery/#test-reliabilty", 
+            "text": "Reliability is tested via unit tests (low-level tests) and integration tests (end-to-end, high-level tests).  Scalability and security should be tested as well.", 
+            "title": "Test reliabilty"
+        }, 
+        {
+            "location": "/delivery/#deploy-into-production", 
+            "text": "If the release candidate meets our quality requirements, we are ready to ship it into production.", 
+            "title": "Deploy into production"
+        }, 
+        {
+            "location": "/delivery/#up-next", 
+            "text": "Monitoring and alerting", 
+            "title": "Up next"
+        }, 
+        {
+            "location": "/monitoring/", 
+            "text": "Monitoring and alerting\n\n\nOnce your software is running in a production environment, your job is finished! Well, not quite.\n\n\nIdeally, we don't ever want to face failure in production, because that's what staging environments are for. We don't live in an ideal world though. So, in case a mistake happens, we want to:\n\n\n\n\nQuickly get notified of the problem\n\n\nQuickly fix the problem\n\n\n\n\nMonitoring\n\n\nMonitoring is done to predict and prevent systems failure. It also helps us understand how our systems work.\n\n\nAlerting\n\n\nIt would be expensive and boring to spend all day staring at a monitoring system. Human resources should focus on adding value to the system, not maintaining it. That's why our deployments must have health checks and auto-healing features enabled.\n\n\nBut when the system cannot fix itself, an alerting system will make sure there's no delay between (imminent) failure and human intervention.", 
+            "title": "Monitoring software"
+        }, 
+        {
+            "location": "/monitoring/#monitoring-and-alerting", 
+            "text": "Once your software is running in a production environment, your job is finished! Well, not quite.  Ideally, we don't ever want to face failure in production, because that's what staging environments are for. We don't live in an ideal world though. So, in case a mistake happens, we want to:   Quickly get notified of the problem  Quickly fix the problem", 
+            "title": "Monitoring and alerting"
+        }, 
+        {
+            "location": "/monitoring/#monitoring", 
+            "text": "Monitoring is done to predict and prevent systems failure. It also helps us understand how our systems work.", 
+            "title": "Monitoring"
+        }, 
+        {
+            "location": "/monitoring/#alerting", 
+            "text": "It would be expensive and boring to spend all day staring at a monitoring system. Human resources should focus on adding value to the system, not maintaining it. That's why our deployments must have health checks and auto-healing features enabled.  But when the system cannot fix itself, an alerting system will make sure there's no delay between (imminent) failure and human intervention.", 
+            "title": "Alerting"
+        }
+    ]
+}
