@@ -1,4 +1,3 @@
-
 repo_name: ilyasotkov/high-level-devops
 repo_url: https://github.com/ilyasotkov/high-level-devops
 edit_uri: ""
@@ -9,6 +8,7 @@ pages:
   - Business value of DevOps: index.md
   - Developing software: development/index.md
   - Delivering software: delivery/index.md
+  - Monitoring software: monitoring/index.md
 
 copyright: 'Copyright &copy; 2018 Ilya Sotkov'
 
