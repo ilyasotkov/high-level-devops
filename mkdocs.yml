@@ -41,8 +41,8 @@ theme:
     text: Fira Sans
     code: Roboto Mono
   palette:
-    primary: green
-    accent: green
+    primary: blue
+    accent: blue
 site_name: "High-level DevOps"
 extra_css:
   - 'css/extra.css'
