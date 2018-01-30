@@ -4,10 +4,10 @@ This article highlights the value of DevOps for businesses, Q&A-style.
 
 ## Question: what problems do enterprises face that DevOps can solve?
 
-- Communication problems between developers ("works on my machine")
+- Communication problems between developers ("hm, works on my laptop")
 - Inability to quickly go from commit to release
-- Problems with reliability in production (scalability, uptime, response times)
-- Late responses to production release problems
+- Problems with reliability in production: lack of scalability, frequent downtime, slow response times
+- Late responses to problems in production
 
 ## Task: draw a diagram for the whole DevOps process
 
