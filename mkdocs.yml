@@ -6,7 +6,9 @@ extra_css:
   - "css/extra.css"
 
 pages:
-  - High-level Devops: index.md
+  - Business value of DevOps: index.md
+  - Developing software: development/index.md
+  - Delivering software: delivery/index.md
 
 copyright: 'Copyright &copy; 2018 Ilya Sotkov'
 
@@ -30,13 +32,13 @@ markdown_extensions:
   - pymdownx.tilde
 theme:
   name: material
-  custom_dir: _docs/theme
+  custom_dir: docs/theme
   logo:
-    icon: playlist_add_check
+    icon: check_box
   feature:
     tabs: true
   font:
-    text: Open Sans
+    text: Fira Sans
     code: Roboto Mono
   palette:
     primary: blue

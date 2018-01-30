@@ -1,5 +1,7 @@
 # High-level DevOps
 
+This article highlights the value of DevOps for businesses, Q&A-style.
+
 ## Question: what problems do enterprises face that DevOps can solve?
 
 - Communication problems between developers ("works on my machine")
@@ -50,3 +52,7 @@ Business value:
 - Less time (on payroll) spent on fixing and maintaining things
 - Happy end customers (requested features and fixes get delivered quicker and reliably)
 - No PR blunders due to security issues
+
+## Up next
+
+[Developer experience: from idea to push](/development)
