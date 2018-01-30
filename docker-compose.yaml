@@ -2,10 +2,9 @@ version: "2"
 
 services:
   docs:
-    build: .
+    image: squidfunk/mkdocs-material:latest
     volumes:
       - .:/docs
-    working_dir: /docs
     ports:
       - 8000:8000
     entrypoint: mkdocs

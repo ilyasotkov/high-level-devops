@@ -1,4 +1,20 @@
-.navbar-default {
-    background-color: #078db9;
-    border-bottom: 8px #EBF2F2 solid;
+@media (min-width: 42rem) {
+  .md-content__inner {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+}
+
+.md-footer-copyright {
+  float: none;
+  max-width: none;
+  text-align: center;
+}
+
+.md-footer-copyright__highlight {
+  color: rgba(0,0,0,.55);
+}
+
+.md-footer-meta {
+    background-color: white;
 }

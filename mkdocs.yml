@@ -5,10 +5,8 @@ edit_uri: ""
 extra_css:
   - "css/extra.css"
 
-site_name: "High-level DevOps"
-
 pages:
-  - Overview: index.md
+  - High-level Devops: index.md
 
 copyright: 'Copyright &copy; 2018 Ilya Sotkov'
 
@@ -30,4 +28,19 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
-theme: cinder
+theme:
+  name: material
+  custom_dir: _docs/theme
+  logo:
+    icon: playlist_add_check
+  feature:
+    tabs: true
+  font:
+    text: Open Sans
+    code: Roboto Mono
+  palette:
+    primary: blue
+    accent: blue
+site_name: "High-level DevOps"
+extra_css:
+  - 'css/extra.css'
