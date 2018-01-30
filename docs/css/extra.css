@@ -34,8 +34,10 @@
 
 .md-header-nav__topic {
   font-size: 2.6rem !important;
+  font-weight: bold !important;
 }
 
 .md-nav__title {
   font-size: 2.4rem !important;
+  font-weight: bold !important;
 }
