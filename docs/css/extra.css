@@ -28,7 +28,8 @@
 }
 
 .md-nav__title.md-nav__title--site.md-nav__title--site.md-nav__title--site {
-  padding-top: 0.4rem;
+  padding-top: 2rem !important;
+  padding-bottom: 2rem !important;
   height: auto;
 }
 
