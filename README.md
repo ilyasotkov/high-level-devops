@@ -1,5 +1,5 @@
-# This is a markdown project
+# What is DevOps? Why should businesses care?
 
-<https://ilyasotkov.github.io/high-level-devops/>
+🔗 <https://ilyasotkov.github.io/high-level-devops/>
 
-We use MkDocs to convert markdown into a great reading experience.
+This project uses [MkDocs](https://github.com/mkdocs/mkdocs) and [material theme](https://github.com/squidfunk/mkdocs-material) to convert markdown into a better reading experience. Deployed to GitHub Pages continously with CircleCI.
