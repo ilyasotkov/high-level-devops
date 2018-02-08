@@ -11,13 +11,13 @@ This article highlights the value of delivering software continuously.
 
 Containers (Docker containers) allow us to run software predictably on any workstation and in any cloud environment.
 
-The first step upon pushing source code into a remote version control repository is to build the image, or convert source code into executable machine code.
+The first step upon pushing source code into a remote version control repository is to build the image, or convert source code (Dockerfile) into executable machine code (Docker container image).
 
-## Deploy container image into a testing deployment environment
+## Deploy container images into a testing deployment environment
 
-Once the image is built, we deploy our software into a deployment environment that simulates production and test its reliability.
+Once the image is built, we deploy the software into a deployment environment that simulates production so that we can test its reliability.
 
-## Test reliabilty
+## Test software's reliabilty
 
 Reliability is tested via unit tests (low-level tests) and integration tests (end-to-end, high-level tests).
 
@@ -25,7 +25,7 @@ Scalability and security should be tested as well.
 
 ## Deploy into production
 
-If the release candidate meets our quality requirements, we are ready to ship it into production.
+If the release candidate meets our quality requirements, we are ready to ship it into production, which is the deployment environment our end customers can access.
 
 ## Up next
 

@@ -1,6 +1,6 @@
 # Monitoring and alerting
 
-Once your software is running in a production environment, your job is finished! Well, not quite.
+Once your software is running in a production environment, our job is finished! Well, not quite.
 
 Ideally, we don't ever want to face failure in production, because that's what staging environments are for. We don't live in an ideal world though. So, in case a mistake happens, we want to:
 

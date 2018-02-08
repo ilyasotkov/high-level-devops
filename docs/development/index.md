@@ -27,7 +27,7 @@ This article focuses on getting from an idea to pushing out a commit of a pull r
 
 ### Commit and push to remote
 
-- Git interface (Git CLI, GitUp, SourceTree)
+- A Git client (Git CLI, GitUp, Sourcetree)
 
 ## What is the value of learning and using a version control system?
 

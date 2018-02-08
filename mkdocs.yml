@@ -5,7 +5,8 @@ extra_css:
   - "css/extra.css"
 
 pages:
-  - Business value of DevOps: index.md
+  - Home: index.md
+  - Business value of DevOps: introduction/index.md
   - Developing software: development/index.md
   - Delivering software: delivery/index.md
   - Monitoring software: monitoring/index.md
