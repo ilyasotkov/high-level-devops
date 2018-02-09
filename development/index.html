@@ -617,7 +617,9 @@ can go from an idea to pushing out a commit of a pull request:</p>
 </ul>
 <h3 id="devops-set-up-development-environments">DevOps: set up development environments</h3>
 <p>The only thing developers should be required to have installed on their workstations is Docker and Docker Compose.</p>
-<p>The rest is run via Docker containers. Usually, in order to start a local server for any kind of web application (in any sort of language), you would have to:</p>
+<p>If you use macOS, you should only need the lastest version of <a href="https://docs.docker.com/docker-for-mac/install/">Docker for Mac</a>.</p>
+<p>If you use Windows, you should only need the lastest version of <a href="https://docs.docker.com/docker-for-windows/install/">Docker for Windows</a>.</p>
+<p>The rest is run on the Docker platform via Docker containers. Usually, in order to start a local server for any kind of web application (in any sort of language), you would have to:</p>
 <div class="codehilite"><pre><span></span>git clone https://github.com/&lt;user&gt;/&lt;web-app-name&gt;
 <span class="nb">cd</span> &lt;web-app-name&gt;
 docker-compose up
@@ -630,7 +632,7 @@ dc up
 </pre></div>
 
 <p>when you want to start a local server (with automatic browser reloading) your application. So, instead of having to install local copies of NodeJS, Ruby, or Python as runtimes for your applications and managing versions through some type of proprietary language version manager, you can manage all of this via a single, transparent and configurable interface of Docker images and Docker Compose files.</p>
-<p>Docker containers are awesome because they are "cheap to create" and require much less resources than creating VMs. That means that all your software should be deployed in container images that you never have to fix -- they're consistently killed and recreated instead.</p>
+<p>Docker containers are awesome becauseg they are "cheap to create" and require much less resources than creating VMs. That means that all your software can be deployed in container images that you will never have to fix -- they're killed and recreated instead.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>We don't ever want to <strong>waste our time fixing things</strong>, we should just be able to give up on a failed container and create a new one (that hopefully won't fail any more).</p>
@@ -643,7 +645,6 @@ dc up
 
 <p><small>Source: <a href="https://github.com/ilyasotkov/rails-react-boilerplate">https://github.com/ilyasotkov/rails-react-boilerplate</a></small></p>
 </div>
-<p>That way you always know what happens when you run <code class="codehilite">dc up</code> -- that is defined in the local <code class="codehilite">docker-compose.yaml</code> file and in the Dockerfile of the image that you will find in the <code class="codehilite">docker-compose.yaml</code> file.</p>
 <p>You might wonder how you'd find which port your web application is running on. To find out, you just have to look inside a straight-forward and transparent API of a <code class="codehilite">docker-compose.yaml</code> file.</p>
 <p>That means that you can become a developer without managing any of the dependencies for the project -- because the developers (and DevOps engineers) already took care of it in a transparent way ("Infrastructure as Code"), via the Dockerfile (container image definition file) and Docker Compose file (local development environment definition file).</p>
 <h3 id="code">Code</h3>
