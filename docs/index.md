@@ -2,13 +2,13 @@
 
 DevOps has reportedly become a buzzword to the point that some practioners do not even understand what it really means. It's great that DevOps has become a buzzword, but it should be clear why **DevOps is valuable**.
 
-This website presents **opinionated understanding** of what DevOps is and what problems it can solve for businesses that are involved in software development.
+This website presents **opinionated guide** to practicing DevOps. Let's discover what problems DevOps can solve and which tools we should use for a best combination of maintainability, scalability, reliability, and security.
 
 ## Introduction
 
 [What is DevOps? What is the value of DevOps?](/introduction)
 
-## Developing and managing software projects
+## Managing and developing software
 
 [Developer experience: from idea to push](/development)
 
