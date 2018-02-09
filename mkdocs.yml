@@ -10,6 +10,7 @@ pages:
   - Developing software: development/index.md
   - Delivering software: delivery/index.md
   - Monitoring software: monitoring/index.md
+  - Frameworks: development/frameworks.md
 
 copyright: 'Copyright &copy; 2018 Ilya Sotkov'
 
@@ -42,8 +43,8 @@ theme:
     text: Fira Sans
     code: Roboto Mono
   palette:
-    primary: blue
-    accent: blue
+    primary: deep purple
+    accent: deep purple
 site_name: "High-level DevOps"
 extra_css:
   - 'css/extra.css'
