@@ -353,8 +353,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#using-a-software-project-management-frameworks-agile" title="Using a software project management frameworks (Agile)" class="md-nav__link">
-    Using a software project management frameworks (Agile)
+  <a href="#project-management-frameworks-agile" title="Project management frameworks (Agile)" class="md-nav__link">
+    Project management frameworks (Agile)
   </a>
   
     <nav class="md-nav">
@@ -380,8 +380,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#devops-set-up-development-environments" title="DevOps: set up development environments" class="md-nav__link">
-    DevOps: set up development environments
+  <a href="#devops-tools-on-the-dev-side-set-up-reliable-and-consistent-development-environments" title="DevOps tools on the Dev side: set up reliable and consistent development environments" class="md-nav__link">
+    DevOps tools on the Dev side: set up reliable and consistent development environments
   </a>
   
 </li>
@@ -408,13 +408,6 @@
         <li class="md-nav__item">
   <a href="#what-is-the-value-of-learning-and-using-a-version-control-system" title="What is the value of learning and using a version control system?" class="md-nav__link">
     What is the value of learning and using a version control system?
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#read-also" title="Read also" class="md-nav__link">
-    Read also
   </a>
   
 </li>
@@ -500,8 +493,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#using-a-software-project-management-frameworks-agile" title="Using a software project management frameworks (Agile)" class="md-nav__link">
-    Using a software project management frameworks (Agile)
+  <a href="#project-management-frameworks-agile" title="Project management frameworks (Agile)" class="md-nav__link">
+    Project management frameworks (Agile)
   </a>
   
     <nav class="md-nav">
@@ -527,8 +520,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#devops-set-up-development-environments" title="DevOps: set up development environments" class="md-nav__link">
-    DevOps: set up development environments
+  <a href="#devops-tools-on-the-dev-side-set-up-reliable-and-consistent-development-environments" title="DevOps tools on the Dev side: set up reliable and consistent development environments" class="md-nav__link">
+    DevOps tools on the Dev side: set up reliable and consistent development environments
   </a>
   
 </li>
@@ -560,13 +553,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#read-also" title="Read also" class="md-nav__link">
-    Read also
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#up-next" title="Up next" class="md-nav__link">
     Up next
   </a>
@@ -590,7 +576,7 @@
                 
                 <h1 id="developer-tasks">Developer tasks</h1>
 <p>This article focuses on how project managers, DevOps engineers, and developers
-can go from an idea to pushing out a commit of a pull request:</p>
+can go from an idea to pushing out a Git commit:</p>
 <ol>
 <li>Idea</li>
 <li>Plan</li>
@@ -598,10 +584,16 @@ can go from an idea to pushing out a commit of a pull request:</p>
 <li>Commit and push to remote</li>
 </ol>
 <h2 id="what-tools-are-used-during-software-development">What tools are used during software development?</h2>
-<h3 id="using-a-software-project-management-frameworks-agile">Using a software project management frameworks (Agile)</h3>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p>Read more about project management frameworks: <a href="https://devops.exekube.com/frameworks">https://devops.exekube.com/frameworks</a></p>
+<h3 id="project-management-frameworks-agile">Project management frameworks (Agile)</h3>
+<ul>
+<li>Agile</li>
+<li>Kanban</li>
+<li>Scrum</li>
+</ul>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>Read more about project management frameworks:</p>
+<p><a href="../development/frameworks">Frameworks and methodologies of developing and delivering software</a></p>
 </div>
 <h4 id="tools-for-generating-ideas">Tools for generating ideas</h4>
 <ul>
@@ -615,27 +607,28 @@ can go from an idea to pushing out a commit of a pull request:</p>
 <li>GitHub discussions</li>
 <li>READMEs for feature proposals</li>
 </ul>
-<h3 id="devops-set-up-development-environments">DevOps: set up development environments</h3>
+<h3 id="devops-tools-on-the-dev-side-set-up-reliable-and-consistent-development-environments">DevOps tools on the Dev side: set up reliable and consistent development environments</h3>
 <p>The only thing developers should be required to have installed on their workstations is Docker and Docker Compose.</p>
 <p>If you use macOS, you should only need the lastest version of <a href="https://docs.docker.com/docker-for-mac/install/">Docker for Mac</a>.</p>
 <p>If you use Windows, you should only need the lastest version of <a href="https://docs.docker.com/docker-for-windows/install/">Docker for Windows</a>.</p>
-<p>The rest is run on the Docker platform via Docker containers. Usually, in order to start a local server for any kind of web application (in any sort of language), you would have to:</p>
-<div class="codehilite"><pre><span></span>git clone https://github.com/&lt;user&gt;/&lt;web-app-name&gt;
-<span class="nb">cd</span> &lt;web-app-name&gt;
+<p>The rest is run on the Docker platform via Docker containers. Usually, in order to start a local server for any kind of web application (in any programming language), you can just:</p>
+<div class="codehilite"><pre><span></span>git clone https://github.com/<span class="si">${</span><span class="nv">GITHUB_OWNER</span><span class="si">}</span>/<span class="si">${</span><span class="nv">WEB_APP_NAME</span><span class="si">}</span>
+<span class="nb">cd</span> <span class="si">${</span><span class="nv">WEB_APP_NAME</span><span class="si">}</span>
 docker-compose up
 </pre></div>
 
-<p>I recommend adding <code class="codehilite">alias dc=docker-compose</code> to your <code class="codehilite">~/.bashrc</code> so that you can just:</p>
-<div class="codehilite"><pre><span></span>git clone https://github.com/&lt;user&gt;/&lt;web-app-name&gt;
-<span class="nb">cd</span> &lt;web-app-name&gt;
-dc up
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>I also recommend adding <code class="codehilite">alias dc=docker-compose</code> to your <code class="codehilite">~/.bashrc</code> so that you can rely on a single command to lanch a dev server for application written in any language:</p>
+<div class="codehilite"><pre><span></span><span class="nb">cd</span> /path/to/<span class="si">${</span><span class="nv">WEB_APP_NAME</span><span class="si">}</span> <span class="o">&amp;&amp;</span> dc up
 </pre></div>
 
-<p>when you want to start a local server (with automatic browser reloading) your application. So, instead of having to install local copies of NodeJS, Ruby, or Python as runtimes for your applications and managing versions through some type of proprietary language version manager, you can manage all of this via a single, transparent and configurable interface of Docker images and Docker Compose files.</p>
-<p>Docker containers are awesome becauseg they are "cheap to create" and require much less resources than creating VMs. That means that all your software can be deployed in container images that you will never have to fix -- they're killed and recreated instead.</p>
+</div>
+<p>So, instead of having to install local copies of NodeJS, Ruby, or Python as runtimes for your applications and managing versions through some type of proprietary language version manager, you can manage all of this via a single, transparent and configurable interface of <a href="https://github.com/ilyasotkov/rails-react-boilerplate">Dockerfiles</a> and <a href="https://github.com/ilyasotkov/rails-react-boilerplate">Docker Compose files</a>.</p>
+<p>Docker containers are awesome because they are <em>cheap to create</em> -- they require much less resources than creating VMs. That means that all your software can be deployed in container images that you will never have to maintain or fix -- they're killed and recreated instead.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>We don't ever want to <strong>waste our time fixing things</strong>, we should just be able to give up on a failed container and create a new one (that hopefully won't fail any more).</p>
+<p>We don't ever want to <strong>waste our time fixing or maintaining things</strong>, it's a lot easier to just give up on a failed container and create a container using the same container image (that hopefully won't fail any more).</p>
 </div>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
@@ -646,10 +639,10 @@ dc up
 <p><small>Source: <a href="https://github.com/ilyasotkov/rails-react-boilerplate">https://github.com/ilyasotkov/rails-react-boilerplate</a></small></p>
 </div>
 <p>You might wonder how you'd find which port your web application is running on. To find out, you just have to look inside a straight-forward and transparent API of a <code class="codehilite">docker-compose.yaml</code> file.</p>
-<p>That means that you can become a developer without managing any of the dependencies for the project -- because the developers (and DevOps engineers) already took care of it in a transparent way ("Infrastructure as Code"), via the Dockerfile (container image definition file) and Docker Compose file (local development environment definition file).</p>
+<p>That means that you can become a developer without managing any of the dependencies for the project -- because the developers (and DevOps engineers) already took care of it in a transparent way ("Infrastructure as Code"), via the Dockerfile (container image definition file) and the Docker Compose file (local development environment definition file).</p>
 <h3 id="code">Code</h3>
 <ul>
-<li>Text editor / IDE (Atom, Vim, Sublime, etc.)</li>
+<li>A text editor (Atom, Vim, Sublime, etc.)</li>
 </ul>
 <h3 id="commit-and-push-to-remote">Commit and push to remote</h3>
 <ul>
@@ -661,8 +654,6 @@ dc up
 <li>Ability to roll back to a previous version of a file or whole project</li>
 <li>Ability to track changes and who made them</li>
 </ul>
-<h2 id="read-also">Read also</h2>
-<p><a href="../development/frameworks">Frameworks and methodologies of developing and delivering software</a></p>
 <h2 id="up-next">Up next</h2>
 <p><a href="../delivery">Delivering software continuously</a></p>
                 
