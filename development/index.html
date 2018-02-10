@@ -387,28 +387,21 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#code" title="Code" class="md-nav__link">
-    Code
+  <a href="#tools-for-authoring-code" title="Tools for authoring code" class="md-nav__link">
+    Tools for authoring code
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#commit-and-push-to-remote" title="Commit and push to remote" class="md-nav__link">
-    Commit and push to remote
+  <a href="#distributed-version-control-systems" title="Distributed version control systems" class="md-nav__link">
+    Distributed version control systems
   </a>
   
 </li>
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#what-is-the-value-of-learning-and-using-a-version-control-system" title="What is the value of learning and using a version control system?" class="md-nav__link">
-    What is the value of learning and using a version control system?
-  </a>
   
 </li>
       
@@ -527,28 +520,21 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#code" title="Code" class="md-nav__link">
-    Code
+  <a href="#tools-for-authoring-code" title="Tools for authoring code" class="md-nav__link">
+    Tools for authoring code
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#commit-and-push-to-remote" title="Commit and push to remote" class="md-nav__link">
-    Commit and push to remote
+  <a href="#distributed-version-control-systems" title="Distributed version control systems" class="md-nav__link">
+    Distributed version control systems
   </a>
   
 </li>
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#what-is-the-value-of-learning-and-using-a-version-control-system" title="What is the value of learning and using a version control system?" class="md-nav__link">
-    What is the value of learning and using a version control system?
-  </a>
   
 </li>
       
@@ -590,8 +576,8 @@ can go from an idea to pushing out a Git commit:</p>
 <li>Kanban</li>
 <li>Scrum</li>
 </ul>
-<div class="admonition hint">
-<p class="admonition-title">Hint</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
 <p>Read more about project management frameworks:</p>
 <p><a href="../development/frameworks">Frameworks and methodologies of developing and delivering software</a></p>
 </div>
@@ -611,7 +597,7 @@ can go from an idea to pushing out a Git commit:</p>
 <p>The only thing developers should be required to have installed on their workstations is Docker and Docker Compose.</p>
 <p>If you use macOS, you should only need the lastest version of <a href="https://docs.docker.com/docker-for-mac/install/">Docker for Mac</a>.</p>
 <p>If you use Windows, you should only need the lastest version of <a href="https://docs.docker.com/docker-for-windows/install/">Docker for Windows</a>.</p>
-<p>The rest is run on the Docker platform via Docker containers. Usually, in order to start a local server for any kind of web application (in any programming language), you can just:</p>
+<p>The rest is run on the Docker platform via Docker containers. Usually, in order to start a local server for any kind of web application (in any programming language), just do this:</p>
 <div class="codehilite"><pre><span></span>git clone https://github.com/<span class="si">${</span><span class="nv">GITHUB_OWNER</span><span class="si">}</span>/<span class="si">${</span><span class="nv">WEB_APP_NAME</span><span class="si">}</span>
 <span class="nb">cd</span> <span class="si">${</span><span class="nv">WEB_APP_NAME</span><span class="si">}</span>
 docker-compose up
@@ -619,7 +605,7 @@ docker-compose up
 
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>I also recommend adding <code class="codehilite">alias dc=docker-compose</code> to your <code class="codehilite">~/.bashrc</code> so that you can rely on a single command to lanch a dev server for application written in any language:</p>
+<p>I also recommend adding <code class="codehilite">alias dc=docker-compose</code> to your <code class="codehilite">~/.bashrc</code> to make it easier to type in:</p>
 <div class="codehilite"><pre><span></span><span class="nb">cd</span> /path/to/<span class="si">${</span><span class="nv">WEB_APP_NAME</span><span class="si">}</span> <span class="o">&amp;&amp;</span> dc up
 </pre></div>
 
@@ -632,28 +618,30 @@ docker-compose up
 </div>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<p>To find our what happens when your <code class="codehilite">dc up</code>, just look inside the Docker Compose file:</p>
+<p>To find our what happens when you run <code class="codehilite">dc up</code>, just look inside the Docker Compose file:</p>
 <div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">image</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">ilyasotkov/rails-react-boilerplate:1.0.0-dev</span>
 </pre></div>
 
 <p><small>Source: <a href="https://github.com/ilyasotkov/rails-react-boilerplate">https://github.com/ilyasotkov/rails-react-boilerplate</a></small></p>
 </div>
-<p>You might wonder how you'd find which port your web application is running on. To find out, you just have to look inside a straight-forward and transparent API of a <code class="codehilite">docker-compose.yaml</code> file.</p>
-<p>That means that you can become a developer without managing any of the dependencies for the project -- because the developers (and DevOps engineers) already took care of it in a transparent way ("Infrastructure as Code"), via the Dockerfile (container image definition file) and the Docker Compose file (local development environment definition file).</p>
-<h3 id="code">Code</h3>
+<p>To find out which port your web application is running on, you just have to look inside a straight-forward and transparent API of a Docker Compose file (<code class="codehilite">docker-compose.yaml</code>) file.</p>
+<p>That means that you can be a developer without managing any of the dependencies for the project -- because the developers (or DevOps engineers) already took care of it in a transparent way ("Infrastructure as Code"), via the Dockerfile (container image definition file) and the Docker Compose file (local development environment definition file).</p>
+<h3 id="tools-for-authoring-code">Tools for authoring code</h3>
 <ul>
 <li>A text editor (Atom, Vim, Sublime, etc.)</li>
 </ul>
-<h3 id="commit-and-push-to-remote">Commit and push to remote</h3>
+<h3 id="distributed-version-control-systems">Distributed version control systems</h3>
 <ul>
 <li>A Git client (Git CLI, GitUp, Sourcetree)</li>
 </ul>
-<h2 id="what-is-the-value-of-learning-and-using-a-version-control-system">What is the value of learning and using a version control system?</h2>
+<div class="admonition question">
+<p class="admonition-title">What is the value of learning and using a version control system?</p>
 <ul>
 <li>A distributed version control system allows developers to work on any part of the project at the same time</li>
 <li>Ability to roll back to a previous version of a file or whole project</li>
 <li>Ability to track changes and who made them</li>
 </ul>
+</div>
 <h2 id="up-next">Up next</h2>
 <p><a href="../delivery">Delivering software continuously</a></p>
                 
